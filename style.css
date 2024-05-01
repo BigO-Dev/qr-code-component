@@ -1,0 +1,91 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(212, 45%, 89%);
+  --grayish-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
+  --font-size-heading: 22px;
+  --font-size-paragraph: 15px;
+  --font-family: Outfit;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+}
+
+/* Modern CSS Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: calc(var(--font-size-paragraph) / 1rem);
+  font-weight: var(--font-weight-normal);
+  color: var(--grayish-blue);
+  background-color: var(--light-gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: calc(var(--font-size-heading) / 1);
+  font-weight: var(--font-weight-bold);
+}
+
+.card {
+  background-color: var(--white);
+  border-radius: 20px;
+  padding: 1rem;
+  width: 90%; /* Adjust the width as needed */
+  max-width: 320px; /* Add a max-width to prevent the card from becoming too wide on larger screens */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card img {
+  width: 100%; /* Make the image responsive */
+  border-radius: 20px;
+}
+
+.main__text {
+  margin: 1rem;
+  text-align: center;
+}
+
+h1 {
+  color: var(--dark-blue);
+}
+
+p {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Add media queries for different screen sizes */
+@media screen and (min-width: 768px) {
+  .card {
+    width: 70%; /* Adjust the width for larger screens */
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 50%; /* Adjust the width for even larger screens */
+  }
+}
