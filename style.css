@@ -10,7 +10,7 @@
   --font-weight-bold: 700;
 }
 
-/* Modern CSS Reset */
+/* CSS Reset */
 *,
 *::before,
 *::after {
@@ -32,11 +32,6 @@ body {
   min-height: 100vh;
 }
 
-img {
-  display: block;
-  height: auto;
-}
-
 h1,
 h2,
 h3,
@@ -51,15 +46,17 @@ h6 {
   background-color: var(--white);
   border-radius: 20px;
   padding: 1rem;
-  width: 90%; /* Adjust the width as needed */
-  max-width: 320px; /* Add a max-width to prevent the card from becoming too wide on larger screens */
+  width: 90%;
+  max-width: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .card img {
-  width: 100%; /* Make the image responsive */
+  display: block;
+  height: auto;
+  width: 100%;
   border-radius: 20px;
 }
 
